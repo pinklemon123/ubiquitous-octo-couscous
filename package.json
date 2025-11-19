@@ -1,0 +1,10 @@
+{
+    "name": "aiwrite-articles",
+    "version": "1.0.0",
+    "description": "Static PDF article site",
+    "scripts": {
+        "build": "node scripts/generate_manifest.js"
+    },
+    "author": "",
+    "license": "ISC"
+}
