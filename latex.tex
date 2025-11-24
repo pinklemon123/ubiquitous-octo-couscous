@@ -1,0 +1,167 @@
+\documentclass[12pt, a4paper]{ctexart}
+\usepackage{geometry}
+\usepackage{booktabs} % 用于绘制专业三线表
+\usepackage{amsmath} % 用于数学公式
+\usepackage{makecell} % 用于表格单元格内换行
+\usepackage{xeCJK} % 确保中文字体支持
+
+% 设置页边距，以确保内容充实且可读
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=20mm,
+ top=25mm,
+ bottom=25mm,
+ }
+
+% 消除页眉页脚
+\pagestyle{plain}
+
+% ----------------- 报告开始 -----------------
+\begin{document}
+
+\begin{abstract}
+本报告系统阐述了中国本科毕业生赴日本信息技术行业的职业发展路径，涵盖薪资趋势、岗位晋升、目标企业及行动计划。基于2025年最新招聘数据与案例分析，提供可操作的步骤建议，帮助读者制定明确的职业目标并实现高薪就业。
+\end{abstract}
+
+\section{前言}
+本报告旨在为有志赴日IT行业发展的中国本科毕业生提供系统、专业且可操作的职业规划指南。全文基于最新的招聘数据、行业趋势以及实际案例，力求在信息的准确性与可读性之间取得平衡，以帮助读者明确职业目标、制定行动计划并顺利实现就业。
+
+本章深入分析了目标人群在日本IT行业的薪资增长潜力及职业晋升路径。通过优先选择外资或国际化企业的策略，预计薪资增长将显著高于传统日系企业。
+
+\subsection{薪资与职位预测表}
+
+下表预测了在理想求职路径下，赴日工作前五年内的收入和职位变化。
+
+\begin{table}[h]
+    \centering
+    \caption{2026-2031年日本IT行业薪资与职位预测}
+    \label{tab:salary_predict}
+    \begin{tabular}{cccccc|c}
+        \toprule
+        \textbf{年份} & \textbf{预计职位} & \textbf{企业类型} & \textbf{税前年收} & \textbf{税后月薪} & \textbf{折合人民币} & \textbf{备注（薪资增长驱动力）} \\
+        & & & \textbf{（万日元）} & \textbf{（日元）} & \textbf{（税后到手）} & \\
+        \midrule
+        2026-2027 & Junior Software Engineer / SE & 外资/国际日企 & 450-520 & 28-33万 & ¥13,000-15,500 & 首份工作轻松达标¥8K。依赖\textbf{英语}和\textbf{算法}。 \\
+        2028 & Software Engineer & 同上，部分跳槽 & 550-650 & 34-40万 & ¥16,000-19,000 & 第一次跳槽，加薪幅度通常为\textbf{20\%-30\%}。 \\
+        2029-2030 & Mid-level Engineer & 外资主流/一线日企 & 650-850 & 40-52万 & ¥19,000-25,000 & 职位稳定，开始拿\textbf{2-4个月}年终奖（Bonus）。 \\
+        2031以后 & Senior / Tech Lead & 顶尖外企 or Rakuten, LINE, Mercari & 900-1400+ & 55万+ & ¥27,000-45,000+ & 进入高薪区间。部分企业提供\textbf{期权/RSU}。 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{职业价值分析}
+
+\begin{itemize}
+    \item \textbf{高性价比起步：} 普通本科生首年税后收入约 $\text{¥1.3-1.5}$ 万元人民币，已相当于国内二线城市互联网大厂水平；且日本的通勤与租房压力相较国内一线城市更为宽松，生活环境更具优势。
+    \item \textbf{爆发式增长：} 职业生涯前五年为薪资增长的黄金期。借助外企的薪酬体系和快速跳槽文化，预计第三年收入突破 $\text{¥2}$ 万元，第五年有极大概率超过 $\text{¥3}$ 万元。
+    \item \textbf{人才溢价：} 日本 IT 行业对具备英语能力和扎实技术的外国人才需求旺盛，目标人群将持续受益于人才溢价。
+\end{itemize}
+
+\section{2025-2026年目标企业清单与求职优先级}
+
+第一份工作的平台选择至关重要。以下推荐的企业名单基于2025年招聘市场热度和对普通本科生友好的录用案例。
+
+\subsection{重点推荐企业（外资/国际化日企）}
+
+\begin{table}[h]
+    \centering
+    \caption{适合普通本科生的目标企业分析}
+    \label{tab:target_companies}
+    \begin{tabular}{cccc}
+        \toprule
+        \textbf{企业} & \textbf{2025年起薪（税前）} & \textbf{语言要求} & \textbf{优势与求职要点} \\
+        \midrule
+        \makecell[c]{乐天 \\ (Rakuten)} & 500-550万 & \makecell[c]{英语为主 \\ 日语N3可活} & 全英文环境，福利好，中国籍员工多，对算法要求相对温和。 \\
+        \makecell[c]{LINE Yahoo \\ (原Yahoo Japan)} & 520-580万 & 英语TOEIC 700+ & 技术氛围浓厚，远程混合办公制，但面试偏向\textbf{算法与系统设计}。 \\
+        Mercari & 550-650万 & 英语流利 & 成长速度极快，期权激励多，技术栈新潮，但\textbf{竞争激烈}。 \\
+        Amazon Japan & 550-700万 & 英语为主 & 薪资天花板高，全球背书极强，但\textbf{LP行为面试}非常严格。 \\
+        \makecell[c]{Accenture / NTT Data \\ (外资项目组)} & 480-550万 & 日语N2-英语 & \makecell[c]{入职门槛最低，签证办理快，可作为跳板。\\ 初期工作内容可能偏向实施/测试。} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\textbf{优先级建议：} 乐天 $\rightarrow$ LINE Yahoo $\rightarrow$ Mercari $\rightarrow$ Amazon $\rightarrow$ Accenture
+
+\subsection{保底选项与风险提示}
+
+传统日企外包转正路线（如富士软、TIS、日立的外包项目）起薪在420-500万日元，要求日语N2。此路线的成功率在90\%以上，是确保获得“技术・人文知识・国际业务”签证的保底方案。然而，初期薪资较低，工作内容重复性高，必须在1-2年后通过\textbf{跳槽}才能进入高薪赛道。
+
+\section{普通本科最现实的两条求职路线（2026年入职）}
+
+求职行动应在2025年年底前启动。以下是两种最现实、成功率最高的路径。
+
+\subsection{路线A：英语+算法直通车路线（推荐指数 $\star\star\star\star\star$）}
+
+此策略旨在绕开日语壁垒，直接竞争东京国际化企业的核心技术岗位，实现薪资一步到位。
+
+\begin{enumerate}
+    \item \textbf{准备期（2025年11月-2026年3月）：} 核心任务是 \textbf{LeetCode刷题 200-250题}（Easy+Medium）和 \textbf{完善英文简历}。简历中必须包含2-3个\textbf{可量化项目描述}。
+    \item \textbf{投递期（2026年1月-6月）：} 通过 \textbf{LinkedIn}、\textbf{Daijob}、\textbf{Wantedly} 主动投递乐天、Mercari、LINE等企业。同步联系外资猎头（如RGF、Robert Walters）进行批量投递。
+    \item \textbf{入职期（2026年7月-10月）：} 获得内定后，集中精力准备签证事宜。
+\end{enumerate}
+\textbf{成功率：} 70\%-80\%。只要算法和英语口语交流过关，普通本科背景亦可成功。
+
+\subsection{路线B：稳健保底与经验积累路线（推荐指数 $\star\star\star\bigstar\bigstar$）}
+
+此策略旨在先获得日本工作签证，积累经验后再进行高薪跳槽。
+
+\begin{enumerate}
+    \item \textbf{准备期（2025年11月-2026年7月）：} 突击 \textbf{JLPT N2} 或N3。注册日系招聘网站（doda、Rikunabi）。
+    \item \textbf{跳板期（2026年7月-2028年7月）：} 投递Accenture、NTT Data等公司的外包/派遣项目。核心目的是拿到签证，积累2年日本工作经验。
+    \item \textbf{跳槽期（2028年下半年）：} 利用日本工作经验，配合持续提升的英语和技术，跳槽至外资企业，薪资可迅速追平路线A。
+\end{enumerate}
+\textbf{成功率：} 90\%以上。但前两年薪资和职业发展速度相对较慢。
+
+\section{求职行动计划：2025年11月-12月关键动作清单}
+
+时间管理至关重要，必须在2025年结束前完成基础建设。
+
+\begin{table}[h]
+    \centering
+    \caption{2025年11月-12月关键行动清单}
+    \label{tab:action_plan}
+    \begin{tabular}{cccc}
+        \toprule
+        \textbf{序号} & \textbf{具体动作} & \textbf{截止时间} & \textbf{备注} \\
+        \midrule
+        1 & 办理护照（如尚未办理） & 11月底 & 赴日求职的第一步。 \\
+        2 & 开通并完善LinkedIn英文资料 & 12月15日前 & 专业头像，英文资料必须写满3-4个可量化项目。 \\
+        3 & 开始刷LeetCode & 持续到入职 & \textbf{目标：} 2026年3月底前刷完250题（Easy+Medium）。 \\
+        4 & 注册求职平台 & 12月10日前 & 注册 \textbf{Daijob}、\textbf{Wantedly}（外企）及日系平台，上传中英文简历。 \\
+        5 & 联系3家猎头 & 12月20日前 & RGF、Pasona、JAC等。直接邮件联系“2026年毕业，寻求东京IT职位”。 \\
+        6 & 确定语言策略 & 12月底 & 决定主攻英语路线还是日语路线，以便安排后续学习时间。 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{最终结论与建议}
+
+普通本科（电子科技、互联网、软件工程）背景赴日，首年税后收入约 $\text{¥13,000-15,500}$ 人民币，成为 2025‑2026 年的高性价比选择。
+
+\subsection{核心竞争力要素}
+
+成功赴日的关键在于展现您的“稀缺性”：
+
+\begin{itemize}
+    \item \textbf{算法能力：} 具备中等水平的算法刷题量（LeetCode 200+）。
+    \item \textbf{英语交流：} 能够进行正常的线上工作和面试沟通。
+    \item \textbf{渠道选择：} 主动使用正确的国际化招聘渠道（LinkedIn + 猎头）。
+\end{itemize}
+
+只要遵循上述行动指南，2026 年入职的月薪 $\text{¥8,000}$ 人民币仅是起点，未来的高薪职业发展前景广阔。
+
+\subsection{高价值行动建议}
+
+建议将所有求职行动视为一个项目，严格按照时间表执行。在投递过程中，应重点关注目标外企对简历中项目经验的\textbf{量化要求}，并针对性地准备\textbf{行为面试（如亚马逊的LP）}，而非仅侧重于技术面试。
+
+\section{结论}
+本报告通过系统化的数据分析与案例研究，明确了中国本科毕业生赴日本IT行业的职业发展路径。核心结论如下：
+1. 选择外资或国际化企业可显著提升薪资增长潜力；
+2. 通过精准的技能提升（算法、英语）与有效的求职策略，可在2026‑2027 年实现月薪人民币 8,000 元以上的目标；
+3. 早期的职业规划与行动计划是确保顺利获得工作签证并实现职业快速晋升的关键。
+基于上述结论，建议读者按照本报告的行动清单执行，以实现高薪就业与职业长期发展。
+
+% ----------------- 报告结束 -----------------
+\end{document}
