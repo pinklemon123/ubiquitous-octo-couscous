@@ -51,6 +51,44 @@
     <script src="   https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const articleList = document.getElementById('article-list');
+            const articles = [
+                {
+                    name: "我的一点建议202511210140.pdf",
+                    path: "pdfs/我的一点建议202511210140.pdf",
+                    date: "2025-11-20T18:29:03.582Z"
+                },
+                {
+                    name: "我的一点建议202511210140 (1).pdf",
+                    path: "pdfs/我的一点建议202511210140 (1).pdf",
+                    date: "2025-11-25T18:29:03.582Z"
+                },
+                {
+                    name: "两个确立202511260633.pdf",
+                    path: "pdfs/两个确立202511260633.pdf",
+                    date: "2025-11-26T06:33:00.000Z"
+                }
+            ];
+
+            articleList.innerHTML = '';
+            articles.forEach(article => {
+                const item = document.createElement('div');
+                item.className = 'article-item';
+                item.innerHTML = `
+                    <span class="article-title">${article.name}</span>
+                    <span class="article-date">${new Date(article.date).toLocaleDateString()}</span>
+                `;
+                item.addEventListener('click', () => {
+                    const viewer = document.getElementById('pdf-viewer');
+                    viewer.src = article.path;
+                    viewer.classList.remove('hidden');
+                });
+                articleList.appendChild(item);
+            });
+        });
+    </script>
 </body>
 
 </html>
