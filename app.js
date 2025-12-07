@@ -56,8 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadPDF(path) {
         emptyState.classList.add('hidden');
         pdfViewer.classList.remove('hidden');
-        // Ensure path is encoded correctly
-        pdfViewer.src = path;
+        // 对包含中文、空格、括号等的路径进行编码，避免 GitHub Pages 404
+        const encoded = encodeURI(path);
+        pdfViewer.src = encoded;
     }
 
     function formatTitle(filename) {
